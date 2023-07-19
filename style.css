@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+  font-family: 'Montserat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    background-image: linear-gradient(#fff,rgba(121, 114, 114, 0.067));
+    opacity: 86%;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+a span{
+    border-bottom: 2px solid red;
+}
+
+
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px;
+}
+a, button{
+    color:#000;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Playfair Display', sans-serif;
+}
+.log{
+    padding: 9px 40px;
+
+}
+.icons a{
+    color: #b6abab;
+}
+
+
+#container{
+min-height: calc(100vh-4em);
+
+padding: 2em;
+
+}
+h4{
+    font-weight: normal; color: yellowgreen;
+    text-transform: lowercase;
+    margin-bottom: 2em;
+}
+
+                 /*-------deuxieme partie---------*/
+
+#photoArray{
+    display: grid;
+    grid-gap: .5em;
+    grid-template-areas: 
+    "tof1 tof2 tof3" 
+    "tof1 tof4 tof5";
+    grid-template-columns: 1fr 20% 20%;
+}
+#photoArray > div{
+    border: 2px solid #EEE;
+}
+#photoArray > div:first-child{
+    grid-area: tof1;
+    height: 450px;
+}
+
+.img1{
+    width: 100%;
+    height: 455px;
+    border-radius: 5px;
+}
+.img2{
+    width: 100%;
+    height: 240px;
+    border-radius: 5px; 
+}
+.img3{
+    width: 100%;
+    height: 240px;
+    border-radius: 5px; 
+}
+.img4{
+    width: 100%;
+    height: 196px;
+    border-radius: 5px; 
+}
+.img5{
+    width: 100%;
+    height: 196px;
+    border-radius: 5px; 
+}
+    .logi{
+        font-size: 25px;
+    }
+    .logi h3{
+     margin-left: 5px;
+     margin-top: -5px;
+       position: absolute;
+    }
+    .logi span{
+       border-bottom: 2px solid red;
+    }
+
+            /*trending-section-css*/
+         
+                .products{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+                    gap: 2rem;
+                    padding: 25px;
+                }
+                .row{
+                    position: relative;
+                    transition: all.40s;
+                }
+                .row img{
+                    width: 100%;
+                    height: 450px;
+                    transition: all.40s;
+                    border-radius: 5px;
+                }
+                .row img:hover{
+                    transform: scale(0.9);
+                }
+                .product-text h5{
+                    position: absolute;
+                    top: 13px;
+                    left: 13px;
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    background-color: #27b737;
+                    padding: 3px 10px;
+                    border-radius: 2px;
+                }
+                .heart-icon{
+                    position: absolute;
+                    right: 0;
+                    font-size: 20px;
+                }
+                .heart-icon:hover{
+                    color: #ee1c47;
+                }
+                .ratting i{
+                    color: #ff8c00;
+                    font-size: 18px;
+                }
+                .price h4{
+                    color: #111;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    font-weight: 400;
+                    margin: 10px;
+                }
+                .price p{
+                    color: #151515;
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin: 10px;
+                }
+
+                 /*................image slide...........*/
+
+                 .containe{
+                    padding: 2rem;
+                    background-color: #f1eaea;
+                }
+                .slider-wrapper{
+                    position: relative;
+                    max-width: 48rem;
+                    margin: 0 auto;
+                }
+                .slider{
+                    display: flex;
+                    aspect-ratio: 16 / 9;;
+                    overflow: auto;
+                    scroll-snap-type: x mandatory;
+                    scroll-behavior: smooth;
+                    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+                    border-radius: 0.5rem;
+                }
+                .slider img{
+                    flex: 1 0 100%;
+                    scroll-snap-align: start;
+                    object-fit: cover;
+                   
+                }
+                .slider-nav{
+                    display: flex;
+                    column-gap: 1rem;
+                    position: absolute;
+                    bottom: 1.25rem;
+                    left: 50%;
+                    transform:translateX(-50%);
+                    z-index: 99;
+                    
+                }
+                .slider-nav a {
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background-color: #fff;
+                opacity: 0.75;
+                transition: opacity ease 250ms;
+                }
+                .slider-nav a :hover{
+                    opacity: 1;
+                }
+
+                /*------image de gallerie-----*/
+                .galerie{
+                    display: flex;
+                    justify-content:space-between;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    width: 50%;
+                    max-width: 1300px;          
+                    margin: 70px 100px 0;
+                                     
+                }
+            
+               
+               
+                .items{
+                    margin: 30px;
+                    overflow: hidden;
+                    flex-shrink: 0;
+                  
+                }
+               
+                .items i{
+                    color: #ff8c00 ;
+                }
+                .items img{
+                    height:100px;
+                    width: 100px;
+                  
+                }
+                .deux-column{
+                   margin-left: 400px;
+                   top: -615px;
+                   position: relative;
+                }
+                .trois-column{
+                    margin-left: 400px;
+                    top: -620px;
+                    position: relative;
+                }
+              
+
+                   /*-------cinquiéme partie partie-------*/
+
+
+         .deux{
+          padding: 0px 7%;
+            display: grid;
+           position: relative;
+           margin-top: -1200px;
+          
+           
+         }
+         .tof img{
+            height: 450px;
+            width: 50%;
+         }
+       .tof2 p{
+        font-size:25px ;
+        height: 450px;
+        width: 50%;
+        background-color: rgb(235, 233, 233);
+        margin-left: 578px;
+        margin-top: -454px;
+       }
+       .tof3{
+        height: 190px;
+        width: 190px;
+        background-color: white;
+        border-radius: 100%;
+        margin-left: 780px;
+        margin-top:-420px ;
+       }
+       .tof4 p{
+        color: red;
+        font-size: 50px;
+        margin-left: 745px;
+        margin-top:-370px ;
+       }
+       .tof5 p{
+        margin-left: 825px;
+        margin-top:-390px ;
+       }
+       .tof6 span{
+        color: red;
+       }
+       .tof6 p{
+        font-size: 25px;
+        margin-left: 825px;
+        margin-top:-300px ;
+       }
+       .tof7 h1{
+        font-size: 27px;
+        margin-left: 715px;
+        margin-top:-210px ;
+       }
+       
+       .tof8 p{
+        font-size: 15px;
+        margin-left: 745px;
+        margin-top:-200px ;
+       }
+       .tof9 h1{
+        font-size:17px ;
+        margin-left: 845px;
+        margin-top:-120px ;
+       
+       }
+       .tof9 span{
+        border-bottom: 2px solid rgb(255, 81, 0);
+       }
+
+                            
+                            /*--------presentation de logo--------*/
+
+                            .dav{
+                                padding: 45px 7%; 
+                            } 
+                            .sab.carde{
+                                width: 220px;
+                                background: #f5f5f5;
+                                box-shadow: 0 10px 20px rgba(0, 0, 0, 0,3);
+                                border-radius: 5px;
+                                padding: 5px;
+                                margin-bottom: 20px;
+                            }
+                            .sab .carde img{
+                                height: 50px;
+                                width: 5%;
+                            }
+                            .sab .carde .tif{
+                              opacity: 0,8;
+                              margin-left: 75px;
+                              margin-top: -50px;
+                              font-size: 23px;
+                            }
+                            .sab .carde .tof{
+                              margin-left: 75px;
+                            }
+                            .sab{
+                                display: grid ;
+                                grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+                                gap: 2rem;
+                            }
+                            .pic{
+                                padding: 15px;
+                            }
+                                                /*---second----*/
+                                                
+                                                .second.carder{
+                                                    width: 220px;
+                                                    background: #f5f5f5;
+                                                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0,3);
+                                                    border-radius: 5px;
+                                                    padding: 5px;
+                                                    margin-bottom: 20px;
+                                                }
+                                                .second .carder img{
+                                                    height: 50px;
+                                                    width: 5%;
+                                                    margin-left: 290px;
+                                                    margin-top: -125px;
+                                                    position: absolute;
+                                                    
+                                                }
+                                                .second .carder .teuf{
+                                                  opacity: 0,8;
+                                                  margin-left: 375px;
+                                                  margin-top: -120px;
+                                                  font-size: 23px;
+                                                  position: absolute;
+                                                }
+                                                .tife{
+                                                margin-left: 375px;
+                                                position: absolute;
+                                                margin-top:-90px;
+                                                }
+                                                .pics{
+                                                    padding: 35px;
+                                                }
+                                                
+                                                    /*---troisiéme parie----*/
+                    
+                                                    .trois.carderie{
+                                                        width: 220px;
+                                                        background: #f5f5f5;
+                                                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0,3);
+                                                        border-radius: 5px;
+                                                        padding: 5px;
+                                                        margin-bottom: 20px;
+                                                    }
+                                                    .trois .carderie img{
+                                                        height: 50px;
+                                                        width: 5%;
+                                                        margin-left: 570px;
+                                                        margin-top: -190px;
+                                                        position: absolute;
+                                                        
+                                                    }
+                                                    .trois .carderie .tire{
+                                                      opacity: 0,8;
+                                                      margin-left: 650px;
+                                                      margin-top: -185px;
+                                                      font-size: 23px;
+                                                      position: absolute;
+                                                    }
+                                                    .tifre{
+                                                    margin-left: 650px;
+                                                    position: absolute;
+                                                    margin-top:-155px;
+                                                    }
+                                                    .pisis{
+                                                        padding: 35px;
+                                                    }
+                                                    
+                                                    /*------cinquiéme partie------*/
+                                                    
+                                                    .quatres.carderies{
+                                                        width: 220px;
+                                                        background: #f5f5f5;
+                                                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0,3);
+                                                        border-radius: 5px;
+                                                        padding: 5px;
+                                                        margin-bottom: 20px;
+                                                    }
+                                                    .quatre .carderies img{
+                                                        height: 50px;
+                                                        width: 5%;
+                                                        margin-left: 840px;
+                                                        margin-top: -260px;
+                                                        position: absolute;
+                                                        
+                                                    }
+                                                    .quatre .carderies .tires{
+                                                      opacity: 0,8;
+                                                      margin-left: 920px;
+                                                      margin-top: -255px;
+                                                      font-size: 23px;
+                                                      position: absolute;
+                                                    }
+                                                    .tifres{
+                                                    margin-left:920px;
+                                                    position: absolute;
+                                                    margin-top:-225px;
+                                                    }
+                                                    .pisise{
+                                                        padding: 35px;
+                                                    }
+
+
+                        
+                                                     /*-------huitiéme partie*/
+                                .prod{
+                                   
+                                    display: flex; 
+                                   
+                                   
+                                 }
+                         
+                                 .prodice img{
+                                     width: 100%;
+                                     height: 300px;
+                                     margin-top: -180px;
+                                     margin-left: 9px;
+                                   
+                                     
+ 
+                                 }
+ 
+                               
+
+                                              /*--------dernier parti----*/
+                                
+                    
+                     .single-footer img{
+                        width: 40px;
+                        height: 50px;
+                        border-radius: 100%; 
+                        padding: 10px; 
+                       }
+                       .single-footer h1{
+                          font-size: 35px;
+                          
+                       }
+                       .single-footer h5{
+                          padding: 15px;
+                          position: relative;
+                          margin-left: -12px;
+                          font-size: 20px;
+                          
+                       }
+                    .footer-wrapper{
+                      width: 1100px;
+                      margin: 0 auto;
+                    
+                    }
+                    .single-footer{
+                      width: 25%;
+                      float: left;
+                      text-align: left;
+                      padding: 30px 0;
+                    }
+                    .single-footer p{
+                      color: #797575;
+                    }
+                    .single-footer ul{
+                      margin: 0;
+                      padding: 0;
+                      list-style: none ;
+                     
+                    }
+                    .single-footer ul li a{
+                      text-decoration: none;
+                      font-size: 18px;
+                      margin: 0 0 20px;
+                      font-weight: 500;
+                      display: inline-block;
+                      color: #797575;
+                    }
+                    .single-footer p {
+                      width: 70%;
+                      line-height: 1.9;
+                    }
+                    .single-footer i {
+                      margin-right: 20px;
+                      font-size: 25px;
+  
+                    }
+                    .footer{
+                      width: 100%;
+                      height: 270px;
+                      position: fixed;
+                      bottom: 0;
+                      z-index: -1;
+                      background-color: rgb(236, 232, 232);
+                    }
+                    .single-footer input{
+                      border-radius: 15px;
+                      width: 200px;
+                      height: 30px;
+                    }
+                    .single-footer button{
+                      background-color: red;
+                      border-radius: 50px;
+                     
+                    }
+                    .single-footer i{
+                      margin-left: 10px;
+                      width: 20px;
+                      margin-top: 25px;
+                      border-radius: 20px;
+            
+                    }
+      
+  
+                               
